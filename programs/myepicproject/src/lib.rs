@@ -3,7 +3,7 @@ use anchor_lang::prelude::*;
 use anchor_lang::solana_program::entrypoint::ProgramResult;
 
 // program id
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("BH4p7HLhjWqiChFj9Bz4wyvzfXE5mRKUrZ8nqCmfXuwe");
 
 // start of macros
 #[program]
