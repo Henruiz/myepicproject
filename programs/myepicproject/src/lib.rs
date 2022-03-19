@@ -1,5 +1,6 @@
 // import anchor tools we need
 use anchor_lang::prelude::*;
+use anchor_lang::solana_program::entrypoint::ProgramResult;
 
 // program id
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
@@ -15,7 +16,7 @@ pub mod myepicproject {
     //     Ok(())
     // }
 
-    pub fn start_stuff_off(ctx: Context<StartStuffOff>) -> Result<()> {
+    pub fn start_stuff_off(ctx: Context<StartStuffOff>) -> ProgramResult {
         // reference to the account
         let base_account = &mut ctx.accounts.base_account;
         // initialize counter
@@ -24,7 +25,7 @@ pub mod myepicproject {
     }
 
     // adding function to add gif to the account
-    pub fn add_gif(ctx: Context<AddGif>) -> Result<()> {
+    pub fn add_gif(ctx: Context<AddGif>) -> ProgramResult {
         // Get a reference to the account and increment total_gifs.
         let base_account = &mut ctx.accounts.base_account;
         base_account.total_gifs += 1;
