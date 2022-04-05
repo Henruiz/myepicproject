@@ -35,7 +35,7 @@ const main = async() => {
   console.log('👀 GIF Count Before: ', account.totalGifs.toString())
 
   // Call add_gif!
-  await program.rpc.addGif("https://media.giphy.com/media/PLHXDVAtmigIXZEOGa/giphy.gif", {
+  await program.rpc.addGif("insert_a_giphy_link_here", {
     accounts: {
       baseAccount: baseAccount.publicKey,
       user: provider.wallet.publicKey,
